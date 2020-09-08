@@ -3,8 +3,8 @@
 # Redux
 Redux不只支援React函式庫，也支援Angular, Vue, vanilla javascript各類框架，目的在統一state管理，統一放置的地方為store，像是前端的database，使不同的UI元件能夠同步化，也就是一有元件更新，另一個元件或其他的元件同步更新渲染，元件不在維護自己的狀態，統一去store存取。透過Redux，可以讓我們知道data是如何改變，為何？在何時？從何而來？讓data流向使其可預測性和透明化。
 
-### 優點：1.state改變透明化  2.集中管理state 3.很好dubug 4.能夠暫存或永存state 5.可以回復上一個動作 6.ecosystem of add-ons
-### 缺點：1.間接且複雜的code 2.需要寫複雜的code而冗長
+優點：1.state改變透明化  2.集中管理state 3.很好dubug 4.能夠暫存或永存state 5.可以回復上一個動作 6.ecosystem of add-ons
+缺點：1.間接且複雜的code 2.需要寫複雜的code而冗長
 
 ## Design Paragram設計風格
 主要以Functional Programming作為設計導向，其好處在於將功能拆分更小reusable的函式，不管是input或return，都不會更動任何的data，透過安裝immer或immutable套件，來達到pure function。也可以將函式組合成更複雜的函式，其設計風格好處：1.更精確 2.好debug 3.好測試 4.好擴充
